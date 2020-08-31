@@ -2,6 +2,7 @@
 {{ $headless := .Site.GetPage "/homepage" }}
 {{ $sections := $headless.Resources.ByType "page" }}
 <header id="site-head" {{ with .Params.header_image }}style="background-image: url({{ . }})"{{ end }}>
+    <div class="overlay"></div>
     <div class="vertical">
         <div id="site-head-content" class="inner">
 
@@ -24,7 +25,7 @@
         <div class='post-holder'>
             <article class='post {{ if eq $index_val 0 }}first{{ else }}{{ if eq (add $index_val 1) (len $sections) }}last{{ end }}{{ end }}'>
                 <header class="post-header">
-                    <h2 class="post-title">{{ .Title }}</h2>
+                    <h2 class="post-title" id="{{ anchorize .Title}}">{{ .Title }}</h2>
                 </header>
                 <section class="post-content">
                     <p>{{ .Content }}</p>

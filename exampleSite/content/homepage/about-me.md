@@ -7,6 +7,13 @@ header_menu: true
 
 ##### Professionel Experience
 
-A lot, but let us get into the details with some lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat lectus et magna placerat tincidunt. Nullam sit amet lectus vitae elit mollis rhoncus non eget lorem. Ut tempor sed dui quis volutpat.
+Venez goûter au calme et à l'étendue de nos belles plages de la côte Picarde, entre Somme et Seine Maritime. 
+A Ault, une petite ville côtière, située dans une valleuse entre Terre et mer.
+Laissez vos yeux chavirer devant ces paysages  naturels et vertigineux.
+Ici, les falaises nous rendent l'horizon infini,
+Ici, les maisons touchent en un même temps le ciel et les flots..
+Parmi elles, La Masqueville vous acceuille dans son écrin de verdure, située à 500 m de la Mer et des premières blanches falaises de Normandie. 
 
-In ultrices, est at lobortis pretium, magna quam mollis neque, id viverra odio est sit amet lorem. Mauris efficitur nunc vel lectus porttitor, sit amet sodales quam eleifend. Duis et felis ut mauris dignissim efficitur. Aliquam non sem eros. Integer elit ante, bibendum id hendrerit vitae, vestibulum eget risus. Nunc efficitur nisl in iaculis vestibulum.
+Nous vous proposons 2 chambres, avec petit déjeuner :
+La Cèdre 
+La Tamaris

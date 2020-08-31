@@ -41,6 +41,7 @@
        font-style: normal;
    }
    
+   
    /* Apply these base styles to all icons */
    .i-ghost, .icon-feed, .icon-twitter, .icon-google-plus, .icon-facebook {
        font-family: 'icons';
@@ -88,12 +89,14 @@
    body {
        height: 100%;
        max-height: 100%;
-       /*font-family: 'Droid Serif', serif;*/
+       /* font-family: 'Droid Serif', serif; */
+       /* font-family: 'Open Sans', sans-serif; */
        font-family: 'Roboto Slab', serif;
        font-size: 2.0rem;
        line-height: 1.6em;
        color: #3A4145;
    }
+
    a.fa {
        text-decoration: none;
    }
@@ -148,11 +151,11 @@
    }
    
    h3 {
-       font-size: 3.5rem;
+       font-size: 3.2rem;
    }
    
    h4 {
-       font-size: 3rem;
+       font-size: 2.7rem;
    }
    
    h5 {
@@ -171,13 +174,13 @@
    }
    
    a:hover {
-       color: #86c440;
+       color: #041930;
    }
    
    a.btn {
    
        text-decoration: none;
-       background-color: #9fd067;
+       background-color: #041930;
        border-radius: 6px;
        -webkit-border-radius: 6px;
        color: white;
@@ -197,7 +200,7 @@
    }
    
    a.btn:hover {
-       background: #86c440;
+       background: #17253b;
    }
    
    #header-arrow {
@@ -213,6 +216,7 @@
        transition: all ease 0.3s;
        -webkit-transition: all ease 0.3s;
        -moz-transition: all ease 0.3s;
+       display: none;
    }
    #header-arrow:hover {
        opacity: 0.9;
@@ -299,7 +303,7 @@
    }
    
    mark {
-       background-color: #ffc336;
+       background-color: #041930;
    }
    
    code, tt {
@@ -412,8 +416,6 @@
        padding-top: 7px;
    }
    
-   
-   
    /* ==========================================================================
       3. Utilities - These things get used a lot
       ========================================================================== */
@@ -452,15 +454,33 @@
        height: 100%;
        margin-bottom: 0rem;
        text-align: center;
-       color: #fff;
-       background: #B80135 no-repeat center center;
+       background: transparent no-repeat center center;
        background-size: cover;
    }
-   
-   #site-head:after {
-   
+
+   .tik {
+    color: #15ccad;
+    background-color: #7a79a1;
    }
-   
+
+   .kong {
+       color: #041930 !important;
+   }
+
+   #site-head .overlay {
+    position: absolute; /* Sit on top of the page content */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #041930;
+    opacity: 0.3;
+   }
+
+   #site-head #site-head-content {
+    /* color: #1b202e; */
+    color: white;
+   }
    
    /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
    #blog-logo img {
@@ -499,12 +519,11 @@
    .post-holder {
        width:100%;
        height: 100%;
-       background: #f2efe8;
+       background: #fff;
        position: relative;
    }
    .post-holder.odd {
-       background: #B80135;
-       color: white;
+
    }
    
    /* Every post, on every page, gets this style on its <article> tag */
@@ -546,10 +565,10 @@
        color: white;
    }
    a.fn-item:hover {
-       color: #9fd067;
+       color: #041930;
    }
    a.fn-item.active {
-       color: #86c440;
+       color: #041930;
        opacity: 1;
    
    }
@@ -563,7 +582,7 @@
        height: 0;
        border-left: 60px solid transparent;
        border-right: 60px solid transparent;
-       border-top: 50px solid #f2efe8;
+       border-top: 50px solid #fff;
        border-radius: 25px;
    }
    .post-after.even {
@@ -800,7 +819,7 @@
        line-height: 1.5em;
        color: #BBC7CC;
        text-align: center;
-       background: #22343A;
+       background: #17253b;
    }
    
    .site-footer a {
@@ -915,7 +934,7 @@
            top: 0px;
            left: 0px;
            z-index: 99999;
-           background: #f2efe8;
+           background: #fff;
            width: 100%;
            text-align: center;
            padding: 4px;
@@ -1017,10 +1036,9 @@
    
        #site-head {
            padding: 10% 0;
-           height: 65%;
        }
        #header-arrow {
-           display: none;
+           display: none;a
        }
        a.btn {
            margin-top: 10px;

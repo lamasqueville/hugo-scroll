@@ -43,23 +43,24 @@ var $sitehead = $('#site-head');
 		$('a.btn.site-menu').click(function (e) {
 			srcToAnchorWithTitle($(e.target).data('title').toLowerCase().split(' ').join('-'));
 		});
+		
 		$('#header-arrow').click(function () {
 			srcTo($first);
 		});
 
 		$('.post-title').each(function () {
 			var t = $(this).text();
+			var id = $(this).attr("id");
 			var index = $(this).parents('.post-holder').index();
-			$fnav.append("<a class='fn-item' item_index='"+index+"'>"+t+"</a>")
+			$fnav.append("<a class='fn-item fn-item--" + index +"' item_index='"+index+"'>"+t+"</a>")
 			$(this).parents('article').attr('id',t.toLowerCase().split(' ').join('-'));
-			$('.fn-item').click(function () {
+			$('.fn-item--' + index).click(function () {
 				var i = $(this).attr('item_index');
 				var s = $(".post[item_index='"+i+"']");
 
 				$('html, body').animate({
 					scrollTop: s.offset().top
 				}, 400);
-
 			});
 		});
 
