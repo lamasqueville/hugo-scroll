@@ -7,7 +7,6 @@ var $first = $('.post.first');
 var $last = $('.post.last');
 var $fnav = $('.fixed-nav');
 var $postholder = $('.post-holder');
-var $postafter = $('.post-after');
 var $sitehead = $('#site-head');
 
 /* Globals jQuery, document */
@@ -64,7 +63,6 @@ var $sitehead = $('#site-head');
 			});
 		});
 
-		$('.post.last').next('.post-after').hide();
 		if($sitehead.length) {
 			$(window).scroll( function () {
 				var w = $(window).scrollTop();
@@ -82,16 +80,13 @@ var $sitehead = $('#site-head');
 					var b = $(this).offset().top + $(this).height();
 					var t = $(this).parent('.post-holder').index();
 					var i = $(".fn-item[item_index='"+t+"']");
-					var a = $(this).parent('.post-holder').prev('.post-holder').find('.post-after');
 
 					$(this).attr('item_index', t);
 
 					if(w >= f && w<=b) {
 						i.addClass('active');
-						a.fadeOut('slow');
 					} else {
 						i.removeClass('active');
-						a.fadeIn('slow');
 					}
 				});
 			});
