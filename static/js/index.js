@@ -30,15 +30,6 @@ var $sitehead = $('#site-head');
 				$(this).addClass("odd");
 		});
 
-		$postafter.each(function (e) {
-			var bg = $(this).parent().css('background-color')
-			$(this).css('border-top-color', bg);
-
-			if (e % 2 == 0) {
-				$(this).addClass("even");
-			}
-		});
-
 		$('a.btn.site-menu').click(function (e) {
 			srcToAnchorWithTitle($(e.target).data('title').toLowerCase().split(' ').join('-'));
 		});
